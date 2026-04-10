@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+body {
+  margin: 0;
+  background: #000;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* esquerda - centro - direita */
+  align-items: center;
+  padding: 15px;
+  color: white;
+  position: relative;
+}
+
+/* Ícones */
+.header i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Logo centralizada de verdade */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Georgia",Arial, Helvetica, sans-serif; /* estilo parecido */
+}
+
+.stories {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 10px;
+  background: #000;
+}
+
+/* esconder scroll */
+.stories::-webkit-scrollbar {
+  display: none;
+}
+
+.story {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+/* círculo com borda estilo Instagram */
+.img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* imagem dentro */
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+/* teu story */
+.your-story {
+  background: #333;
+  position: relative;
+}
+.add{
+    position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background: #0095f6;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.your-story i {
+  color: white;
+  font-size: 20px;
+}
+.feed {
+  background: #000;
+  color: white;
+}
+
+/* cada post */
+.post {
+  margin-bottom: 20px;
+}
+
+/* header */
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.perfil {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+/* imagem */
+.post-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* ações */
+.post-actions {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.post-actions i {
+  cursor: pointer;
+}
+
+/* descrição */
+.post-desc {
+  padding: 0 10px 10px;
+  font-size: 14px;
+}
